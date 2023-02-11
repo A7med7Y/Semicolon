@@ -1,0 +1,71 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#box{
+    width: 575px;
+    height: 355px;
+    background-color: #1B244A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.columns{
+    height: max-content;
+    width: 155px
+}
+.board-title-home{
+    font-family: 'Verdana';
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #EEEEEE;
+    line-height: 36px;
+    margin-bottom: 21px;
+}
+.score{
+    width: 155px;
+    height: 120px;
+    background-color:#080001;
+}
+.score-text{
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 127px;
+    text-align: center;
+    color: #F94F6D;
+
+}
+.buttons{
+    height: 45px;
+    margin-top: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+}
+.button{
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #9AABD8;
+    background-color: #1B244A;
+}
+#reset-button{
+    width: max-content;
+    background-color: #1B244A;
+    width: 575px;
+    height: 100px;
+}

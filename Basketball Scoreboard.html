@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Basketball Scoreboard.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    </head>
+    <body>
+        <div id="box">
+            <div class="columns">
+                <div class="board-title-home">HOME</div>
+                <div class="score">
+                    <div class="score-text" id="HomeText">0</div>
+                </div>
+                <div class="buttons">
+                    <button class="button" onclick="increment1()">+1</button>
+                    <button class="button" onclick="increment2()">+2</button>
+                    <button class="button" onclick="increment3()">+3</button>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="board-title-home">GUEST</div>
+                <div class="score">
+                    <div class="score-text" id="GuestText">0</div>
+                </div>
+                <div class="buttons">
+                    <button class="button" onclick="increment4()">+1</button>
+                    <button class="button" onclick="increment5()">+2</button>
+                    <button class="button" onclick="increment6()">+3</button>
+                </div>
+            </div>
+        </div>
+        <div id="reset-button"><button class="button" onclick="reset()" style="width: 100px; margin-left: 67px;">Reset</button></div>
+        <script>
+            let data = 0;
+            document.getElementById("HomeText").innerText=data;
+            function increment1(){
+                data = data + 1
+                document.getElementById("HomeText").innerText=data
+            }
+            function increment2(){
+                data = data + 2
+                document.getElementById("HomeText").innerText=data
+            }
+            function increment3(){
+                data = data + 3
+                document.getElementById("HomeText").innerText=data
+            }
+            let data1 = 0;
+            document.getElementById("GuestText").innerText=data1;
+            function increment4(){
+                data1 = data1 + 1
+                document.getElementById("GuestText").innerText=data1
+            }
+            function increment5(){
+                data1 = data1 + 2
+                document.getElementById("GuestText").innerText=data1
+            }
+            function increment6(){
+                data1 = data1 + 3
+                document.getElementById("GuestText").innerText=data1
+            }
+            function reset(){
+                data = 0
+                data1 = 0
+                document.getElementById("GuestText").innerText=data1
+                document.getElementById("HomeText").innerText=data
+            }
+        </script>
+    </body>
+</html>
